@@ -48,8 +48,3 @@ object CmdRun : BuildType({
         }
     }
 })
-
-object JavaSeleniumVCS : GitVcsRoot({
-    name = "JavaSeleniumVCS2"
-    url = "https://github.com/cgungaloo/JavaCucumberFramework.git"
-})
