@@ -43,7 +43,10 @@ object CmdRun : BuildType({
     steps {
         script {
             name = "cmd step"
-            scriptContent = """echo "hello there""""
+            scriptContent = """
+                echo "hello there"
+                pwd
+            """.trimIndent()
         }
     }
 })
