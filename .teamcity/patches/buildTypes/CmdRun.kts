@@ -22,6 +22,7 @@ changeBuildType(RelativeId("CmdRun")) {
             scriptContent = """
                 echo "hello there"
                 pwd
+                echo "Another one"
             """.trimIndent()
         }
     }
