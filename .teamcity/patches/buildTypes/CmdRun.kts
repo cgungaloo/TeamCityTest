@@ -11,6 +11,10 @@ To apply the patch, change the buildType with id = 'CmdRun'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("CmdRun")) {
+    vcs {
+        remove(RelativeId("JavaSeleniumVCS"))
+    }
+
     expectSteps {
         script {
             name = "cmd step"
