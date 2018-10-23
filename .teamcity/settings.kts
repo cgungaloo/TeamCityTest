@@ -36,22 +36,19 @@ project {
 object CmdRun : BuildType({
     name = "cmd run"
 
-    vcs {
-        root(JavaSeleniumVCS)
-    }
-
     steps {
         script {
             name = "cmd step"
             scriptContent = """
                 echo "hello there"
                 pwd
+                echo "Another one"
             """.trimIndent()
         }
     }
 })
 
 object JavaSeleniumVCS : GitVcsRoot({
-    name = "JavaSeleniumVCS"
+    name = "JavaSeleniumVCS2"
     url = "https://github.com/cgungaloo/JavaCucumberFramework.git"
 })
