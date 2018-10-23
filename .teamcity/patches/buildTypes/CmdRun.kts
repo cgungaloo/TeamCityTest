@@ -27,6 +27,7 @@ changeBuildType(RelativeId("CmdRun")) {
                 echo "hello there"
                 pwd
                 echo "Another one"
+                echo "And Another one"
             """.trimIndent()
         }
     }
